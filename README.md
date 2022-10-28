@@ -1,1 +1,2 @@
 # Open_Threat_Exchange_API
+Python program to read in any number of Hash values, IP addresses, or URLs that are potentially malicious. Calls AT&T's Open Threat Exchange API, and processes returned JSON data containing connected malware, communities, and dates. Stores data locally and in a spreadsheet file for ease of viewing. Due to the line by line nature of the program, can process an infinte amount of potentially malicious websites/files.
