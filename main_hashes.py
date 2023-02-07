@@ -4,18 +4,10 @@ import csv
 import os
 import time
 
-'''
-Hash sections:
-general: General_hashes metadata about the file hash, and a list of the other sections currently available for this hash.
-    @Kia: general contains pulses but not AV and sanbox
-analysis: dynamic and static analysis of this file (Cuckoo analysis, exiftool, etc.)
-    @Kia: analysis contains AV and sanbox info but not pluses 
-@ so for general otx hash db we need two queries one general & analysis
-'''
 
 headers = {
     'accept': 'application/json',
-    'Authorization': '4bd2d893d5156c47b23bf2df8d25254860d97b881405f0569ba4538ac06d2215'}
+    'Authorization': '{Open Threat Exchange API KEY}'}
 
 def main():
     # parse through hashes txt file and create a list of values needed.
